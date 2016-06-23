@@ -143,8 +143,8 @@ function addContextCurrentTransform(ctx) {
       var prev = this._transformStack.pop();
       if (prev) {
         this._transformMatrix = prev;
-        this._originalRestore();
       }
+      this._originalRestore();
     };
 
     ctx.translate = function ctxTranslate(x, y) {
